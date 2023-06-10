@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+<body>
+    <div>
+        <h1>Add Product</h1>
+        <form>
+            <label for="productName">product Name</label>
+            <input id="productName" type="text">
+            <span id="productNameError"></span>
+            <br><br>
+            <label for="productPrice">product Price</label>
+            <input id="productPrice" type="number">
+            <span id="productPriceError"></span>
+            <br><br>
+            <label for="catagorySelect">catagory</label>
+            <select id="catagorySelect">
+                <option value="" disabled selected>Select Category</option>
+                <option value="drinks">drinks</option>
+                <option value="meat">meat</option>
+                <option value="dairy">dairy</option>
+                <option value="snacks">snacks</option>
+                <option value="basic">basic</option>
+            </select>
+            <span id="catagorySelectError"></span>
+            <br><br>
+            <label for="imageLink">Image Link</label>
+            <input id="imageLink" type="text">
+            <span id="imageLinkError"></span>
+            <br><br>
+            <button type="button" onclick="addProduct()">Add Product</button>
+            <button type="button" onclick="deleteAllProduct()">Delete All Products</button>
+            <br><br>
+            <table>
+                <h1>My Cart</h1>
+                <thead
+                    ><tr>
+                        <th>
+                            name
+                        </th>
+                        <th>
+                            price
+                        </th>
+                        <th>
+                            catagory
+                        </th>
+                        <th>
+                            image
+                        </th>
+                        <th>
+                            actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

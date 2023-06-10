@@ -1,0 +1,46 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: silver;
+}
+
+table {
+  margin-top: 20px;
+}
+input,select {
+cursor: pointer;
+width: 100%;
+padding: 5px;
+margin-bottom: 10px;
+border: 1px solid black;
+border-radius: 3px;
+}
+span {
+    color: red;
+}
+th,td {
+padding: 8px;
+text-align: center;
+border-bottom: 1px solid silver;
+}
+th{
+  background-color: lightgray;
+}
+button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+  
